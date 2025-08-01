@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varnit Kumar - Google Search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #3c4043;
+            line-height: 1.58;
+        }
+        
+        .header {
+            padding: 20px;
+            border-bottom: 1px solid #dadce0;
+        }
+        
+        .search-container {
+            display: flex;
+            align-items: center;
+            max-width: 600px;
+        }
+        
+        .google-logo {
+            margin-right: 30px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .google-logo img {
+            height: 30px;
+            width: auto;
+        }
+        
+        .search-box {
+            flex: 1;
+            padding: 12px 20px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            font-size: 16px;
+            outline: none;
+            box-shadow: 0 2px 5px 1px rgba(64,60,67,.16);
+        }
+        
+        .results-container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .results-info {
+            color: #70757a;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .result {
+            margin-bottom: 30px;
+        }
+        
+        .result-url {
+            color: #202124;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+        
+        .result-title {
+            color: #1a0dab;
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom: 4px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .result-title:hover {
+            text-decoration: underline;
+        }
+        
+        .result-description {
+            color: #4d5156;
+            font-size: 14px;
+            line-height: 1.58;
+        }
+        
+        .top-result {
+            background: #f8f9fa;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+        
+        .top-result-label {
+            color: #70757a;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        
+        .section-header {
+            color: #202124;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 30px 0 16px 0;
+            border-bottom: 1px solid #dadce0;
+            padding-bottom: 8px;
+        }
+        
+        .people-ask-item {
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            padding: 16px;
+            background: #fff;
+        }
+        
+        .people-ask-question {
+            color: #1a0dab;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        
+        .people-ask-answer {
+            color: #4d5156;
+            font-size: 14px;
+            line-height: 1.58;
+        }
+        
+        .image-results {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+        
+        .image-item {
+            text-align: center;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .image-caption {
+            color: #4d5156;
+            font-size: 12px;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #1a0dab;
+        }
+        
+        .workshop-list {
+            margin: 8px 0;
+            padding-left: 16px;
+        }
+        
+        .workshop-list li {
+            margin-bottom: 4px;
+            color: #4d5156;
+        }
+        
+        .stats {
+            background: #f1f3f4;
+            padding: 8px 12px;
+            border-radius: 16px;
+            display: inline-block;
+            margin: 4px 8px 4px 0;
+            font-size: 13px;
+            color: #5f6368;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="search-container">
+            <div class="google-logo">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google">
+            </div>
+            <input type="text" class="search-box" value="Varnit Kumar MCA GGSIPU Amazon ML Data Associate Google Student Developer Ambassador" readonly>
+        </div>
+    </div>
+    
+    <div class="results-container">
+        <div class="results-info">About 2,340 results (0.38 seconds)</div>
+        
+        <!-- Introduction -->
+        <div class="result">
+            <div class="result-description">
+                <strong>Varnit Kumar</strong>, an MCA student from <strong>BCIIT, GGSIPU</strong> with exceptional academic performance (9.2/10 CGPA), is the ideal Google Student Developer Club Ambassador candidate. Currently pursuing his Master's degree, he brings proven industry experience from <span class="highlight">Amazon as an ML Data Associate</span> and expertise in <span class="highlight">Python, AWS, Power BI, and Prompt Engineering</span>.
+            </div>
+        </div>
+        
+        <!-- Top Result -->
+        <div class="top-result">
+            <div class="top-result-label">Top Result</div>
+            <div class="result-title">Varnit Kumar - ML Data Associate at Amazon | MCA Student GGSIPU</div>
+            <div class="result-url" style="color: #006621;">https://linkedin.com/in/varnit-kumar • kumar.varnit.16@gmail.com</div>
+            <div class="result-description">
+                Former Amazon ML Data Associate with hands-on experience in <span class="highlight">large-scale data analysis, machine learning models, and cloud technologies</span>. Currently pursuing MCA at BCIIT, GGSIPU with 9.2 CGPA. Cultural & Engagement Ambassador and Cricket Team Captain with proven leadership skills.
+                <br><br>
+                <span class="stats">25% accuracy improvement</span>
+                <span class="stats">30% error reduction</span>
+                <span class="stats">95% on-time delivery</span>
+                <span class="stats">AWS Certified</span>
+            </div>
+        </div>
+        
+        <!-- People Also Ask -->
+        <div class="section-header">People Also Ask</div>
+        
+        <div class="people-ask-item">
+            <div class="people-ask-question">▷ What makes Varnit's experience unique for the Ambassador role?</div>
+            <div class="people-ask-answer">
+                His diverse background combines <span class="highlight">industry experience at Amazon</span> with academic excellence. As an ML Data Associate, he improved labeling accuracy by 25% and reduced human errors by 30%. He's also a Cultural & Engagement Ambassador, demonstrating natural community-building skills that translate perfectly to student leadership.
+            </div>
+        </div>
+        
+        <div class="people-ask-item">
+            <div class="people-ask-question">▷ What technical projects showcase his capabilities?</div>
+            <div class="people-ask-answer">
+                <strong>FarmIQ</strong> - AI-powered smart farming assistant using Python, Flask, ML models, and real-time weather integration. <strong>Student Performance Analyzer</strong> - Complete MLOps pipeline with SQL, MLflow, and cloud deployment. <strong>Traffic Sign Detection</strong> - Deep learning model using CNNs, TensorFlow, and OpenCV. All projects demonstrate end-to-end development skills with <span class="highlight">real-world applications</span>.
+            </div>
+        </div>
+        
+        <div class="people-ask-item">
+            <div class="people-ask-question">▷ How does his workshop vision align with Google's mission?</div>
+            <div class="people-ask-answer">
+                His proposed <span class="highlight">"AI & Cloud Innovation Series"</span> includes: 1) "Prompt Engineering with Google Gemini for Students", 2) "Building Your First App on Google Cloud Platform", and 3) "Data Visualization with Google Analytics & Looker". This directly leverages his Amazon experience and AWS/Power BI expertise to bridge students to Google's ecosystem.
+            </div>
+        </div>
+        
+        <div class="people-ask-item">
+            <div class="people-ask-question">▷ What leadership experience does he bring?</div>
+            <div class="people-ask-answer">
+                Beyond his technical role, Varnit serves as <span class="highlight">Cultural & Engagement Ambassador at Amazon</span>, leading team initiatives and fostering inclusivity. As <span class="highlight">Cricket Team Captain at BCIIT</span>, he manages team selection, strategy, and performance. His experience in Agile sprints and cross-functional collaboration makes him ideal for managing student developer communities.
+            </div>
+        </div>
+        
+        <!-- Additional Results -->
+        <div class="result">
+            <div class="result-url">forage.com/virtual-experience</div>
+            <div class="result-title">Varnit Kumar - Data Analytics Job Simulations Portfolio</div>
+            <div class="result-description">
+                Completed prestigious virtual internships including <span class="highlight">Deloitte Australia, Accenture North America, Tata Data Visualization, and Quantium</span>. Demonstrates commitment to continuous learning and practical application of data analytics skills across different industry contexts.
+            </div>
+        </div>
+        
+        <div class="result">
+            <div class="result-url">github.com/varnitkumar</div>
+            <div class="result-title">Varnit Kumar's GitHub - ML Projects & Data Engineering</div>
+            <div class="result-description">
+                Repository showcasing <span class="highlight">FarmIQ AI farming assistant, Student Performance ML pipeline, Sentiment Analysis models</span>, and traffic sign detection systems. Clean, well-documented code with focus on <span class="highlight">MLOps practices, cloud deployment, and real-world applications</span>.
+            </div>
+        </div>
+        
+        <!-- Image Results -->
+        <div class="section-header">Image Results</div>
+        
+        <div class="image-results">
+            <div class="image-item">
+                <img src="C:\Users\varni\OneDrive\Pictures\Profile.jpg" 
+                     alt="Professional Developer" 
+                     style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 8px;">
+                <div class="image-caption">Varnit Kumar - Amazon ML Data Associate</div>
+            </div>
+            
+            <div class="image-item">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=150&fit=crop" 
+                     alt="Power BI Dashboard Analytics" 
+                     style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 8px;">
+                <div class="image-caption">Data Analytics Dashboard - Amazon Project</div>
+            </div>
+            
+            <div class="image-item">
+                <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=200&h=150&fit=crop" 
+                     alt="Smart Farming Technology Interface" 
+                     style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 8px;">
+                <div class="image-caption">FarmIQ - AI Smart Farming Assistant</div>
+            </div>
+        </div>
+        
+        <!-- Certifications Section -->
+        <div class="section-header">Related Certifications & Skills</div>
+        
+        <div class="result">
+            <div class="result-description">
+                <span class="highlight">AWS Certifications:</span> Fundamentals of Analytics on AWS (Part 1, 2), Essentials of Prompt Engineering, Fundamentals of Machine Learning & AI<br>
+                <span class="highlight">Professional Certificates:</span> Programming with Python (OpenEDG), Complete SQL Bootcamp, Microsoft Excel Master, Data Analysis (Microsoft & LinkedIn)<br>
+                <span class="highlight">Technical Stack:</span> Python, SQL, MongoDB, AWS, MLflow, ETL Tools, Power BI, DSA, Computer Networking
+            </div>
+        </div>
+    </div>
+</body>
+</html>
